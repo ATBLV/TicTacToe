@@ -1,0 +1,211 @@
+.title {
+    padding-left: 1.5rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    background-color: black, 1;
+    max-width: 550px;
+    min-width: 550px;
+    max-height: 550px;
+    min-height: 550px;
+}
+
+
+.grid_space {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3%;
+    max-width: 550px;
+    min-width: 550px;
+    max-height: 550px;
+    min-height: 550px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+    background-size: 550px 550px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grid_fade {
+    animation-delay: 10s;
+    animation: fadeOut 2s;
+    -webkit-animation: fadeOut 2s;
+    -moz-animation: fadeOut 2s;
+    -o-animation: fadeOut 2s;
+    -ms-animation: fadeOut 2s;
+    opacity: 0.15;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.0.15;
+    }
+}
+
+.square {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.squareWin {
+
+    filter: invert(13%) sepia(80%) saturate(6980%) hue-rotate(344deg) brightness(91%) contrast(88%);
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+
+
+.selection {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.selection img {
+
+    width: 5rem;
+}
+
+.selection #x {
+    width: 8rem;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+#players {}
+
+img {
+
+    /* filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5)); */
+}
+
+#startGame {
+    color: black;
+    background-color: transparent;
+    opacity: 0.85;
+    position: relative;
+    top: -50%;
+    margin-top: 10rem;
+    align-self: center;
+    text-align: center;
+    font-size: 3rem;
+    animation: fadeIn 1s;
+}
+
+#endGame {
+    animation-delay: 5s;
+    color: black;
+    background-color: transparent;
+    position: relative;
+    top: -50%;
+    margin-top: -26rem;
+    align-self: center;
+    text-align: center;
+    font-size: 9rem;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+    filter: drop-shadow(0.12rem 0.12rem 0.12rem rgba(0, 0, 0, 0.5));
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.95;
+    }
+}
+
+.reset {
+    margin-top: 5rem;
+    width: 17rem;
+    height: 7rem;
+    font-size: 3rem;
+    opacity: 1;
+    background-color: #ef233c;
+    filter: drop-shadow(0.12rem 0.12rem 0.12rem rgba(0, 0, 0, 0.5));
+}
+
+.footerOdin {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 90%);
+    font-size: 0.8rem;
+    bottom: 10px;
+    margin-top: 5rem;
+}
+
+
+.footerOdin img {
+    max-width: 28px;
+    height: auto;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.created {
+    /* margin-left: 1.424rem;  */
+    margin-left: 1.8rem;
+    /* margin-top: -1rem;  */
+    font-size: 0.8rem;
+
+}
+
+div a img {
+    max-width: 24px;
+    /* height: auto; */
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    transform: translate(10%, -10%);
+}
